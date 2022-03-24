@@ -1,0 +1,45 @@
+.btn-container {
+  margin: 20px;
+}
+
+body {
+  text-align: center;
+  background-color: beige;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+.flex-container {
+  display: flex;
+  margin: 25px 10px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  transition-duration: 0.2s;
+  color: rgb(209, 28, 28);
+  background-color: rgb(0, 0, 0);
+}
+
+.cell.isShown {
+  background-color: beige;
+}
+
+.board-container {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px black;
+}
+
+button {
+  width: 115px;
+  height: 30px;
+  border-radius: 6px;
+}

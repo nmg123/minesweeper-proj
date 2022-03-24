@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MINESWEEPER GAME</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body onload="init()">
+    <h1>MINESWEEPER</h1>
+    <div class="reset" onclick="init()"></div>
+    <button class="btn" onclick="setLevel(4,2)">Easy</button>
+    <button class="btn" onclick="setLevel(8,12)">Medium</button>
+    <button class="btn" onclick="setLevel(12,30)">Hard</button>
+    <div class="flex-container">
+      <table align="center">
+        <tr>
+          <td>
+            <h2>
+              <span class="minutes">00</span>:<span class="seconds">00</span>
+            </h2>
+          </td>
+          <td><h2 id="lifes"></h2></td>
+        </tr>
+      </table>
+      <div id="noContextMenu" class="board-container"></div>
+    </div>
+    <button class="reset" onclick="init()">Reset Game</button>
+    <br />
+    <br />
+    <footer>BY NATALI AVSHALOM</footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
